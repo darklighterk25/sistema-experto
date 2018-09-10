@@ -5,7 +5,7 @@ import { MethodologyComponent } from './components/methodology/methodology.compo
 
 const APP_ROUTES: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'methodology/:name', component: MethodologyComponent },
+  { path: 'methodology/:id', component: MethodologyComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 

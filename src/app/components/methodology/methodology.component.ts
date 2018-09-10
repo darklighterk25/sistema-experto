@@ -15,7 +15,7 @@ export class MethodologyComponent implements OnInit {
   constructor( private _activatedRoute: ActivatedRoute,
                private _methodologiesService: MethodologiesService ) {
     this._activatedRoute.params.subscribe( params => {
-      this.methodology = this._methodologiesService.getMethodology( params['name'] );
+      this.methodology = this._methodologiesService.getMethodology( params['id'] );
     });
   }
   ngOnInit() {

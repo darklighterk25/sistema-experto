@@ -8,7 +8,7 @@ export class MethodologiesService {
 
   private methodologies: Methodology[] = [
     {
-      id: '',
+      id: 'extreme-programming',
       name: 'Extreme Programming',
       characteristics: [
         'Desarrollo iterativo e incremental: pequeñas mejoras, unas tras otras.',
@@ -85,7 +85,7 @@ export class MethodologiesService {
       ]
     },
     {
-      id: '',
+      id: 'adaptive-software-development',
       name: 'Adaptive Software Development',
       characteristics: [
         'Iterativo.',
@@ -110,7 +110,7 @@ export class MethodologiesService {
       ]
     },
     {
-      id: '',
+      id: 'dynamic-systems-development-method',
       name: 'Dynamic Systems Development Method',
       characteristics: [
         'Busca involucrar al cliente es la clave para llevar un proyecto eficiente y efectivo.',
@@ -158,7 +158,7 @@ export class MethodologiesService {
       ]
     },
     {
-      id: '',
+      id: 'crystal-clear-methods',
       name: 'Crystal Clear Methods',
       characteristics: [
         'Entrega frecuente. Consiste en entregar software a los clientes con frecuencia, no solamente compilar el código. La frecuencia ' +
@@ -209,7 +209,7 @@ export class MethodologiesService {
       ]
     },
     {
-      id: '',
+      id: 'feature-driven-development',
       name: 'Feature Driven Development',
       characteristics: [
         'Se preocupa por la calidad, por lo que incluye un monitoreo constante del proyecto.',
@@ -262,7 +262,7 @@ export class MethodologiesService {
       ]
     },
     {
-      id: '',
+      id: 'agile-modeling',
       name: 'Agile Modeling',
       characteristics: [
         'Asumir simplicidad.',
@@ -305,7 +305,7 @@ export class MethodologiesService {
       ]
     },
     {
-      id: '',
+      id: 'kanban',
       name: 'Kanban',
       characteristics: [
         'Visualice lo que hace (su flujo de trabajo): una visualización de todas sus tareas y elementos en una tabla contribuirá a que ' +
@@ -344,10 +344,23 @@ export class MethodologiesService {
         'https://kanbantool.com/es/metodologia-kanban'
       ]
     },
+  ];
 
-    // Objeto de ejemplo.
-    {
-      id: '',
+  constructor() {
+  }
+  getMethodologies(): Methodology[] {
+    return this.methodologies;
+  }
+  getMethodology( id: string ): Methodology {
+    for (let i = 0; i < this.methodologies.length; i++) {
+      console.log('le llegó ' + id);
+      if (this.methodologies[i].id === id) {
+        console.log('y lo encontró!');
+        return this.methodologies[i];
+      }
+    }
+    return {
+      id: 'prueba',
       name: 'Metodología',
       characteristics: [
         'Primer característica',
@@ -366,19 +379,6 @@ export class MethodologiesService {
       sources: [
         'wikipedia.org'
       ]
-    }
-  ];
-
-  constructor() {
-  }
-  getMethodologies(): Methodology[] {
-    return this.methodologies;
-  }
-  getMethodology( name: string ): Methodology {
-    for (let i = 0; i < this.methodologies.length; i++) {
-      if (this.methodologies[i].name === name) {
-        return this.methodologies[i];
-      }
-    }
+    };
   }
 }

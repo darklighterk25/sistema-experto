@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   }
   ngOnInit() {
   }
-  showMethodology( name: string ) {
-    this._router.navigate( ['/methodology', name] );
+  showMethodology( id: string ) {
+    this._router.navigate( ['/methodology', id] );
   }
 }
