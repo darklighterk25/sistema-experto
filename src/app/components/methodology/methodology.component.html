@@ -56,27 +56,27 @@
       <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('../../../../src/assets/img/bg-showcase-1.jpg');"></div>
       <div class="col-lg-6 order-lg-1 my-auto showcase-text p-5">
         <h2>Características</h2>
-        <p class="lead mb-0 text-justify text-black">
-
-        </p>
+        <ul class="lead mb-0 text-justify text-black" *ngFor="let characteristic of methodology.characteristics">
+          <li>{{ characteristic }}</li>
+        </ul>
       </div>
     </div>
     <div class="row no-gutters">
       <div class="col-lg-6 text-white showcase-img" style="background-image: url('../../../../src/assets/img/bg-showcase-2.jpg');"></div>
       <div class="col-lg-6 order-lg-1 my-auto showcase-text p-5">
         <h2>Ventajas</h2>
-        <p class="lead mb-0 text-justify text-black">
-
-        </p>
+        <ul class="lead mb-0 text-justify text-black" *ngFor="let advantage of methodology.advantages">
+          <li>{{ advantage }}</li>
+        </ul>
       </div>
     </div>
     <div class="row no-gutters">
       <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('../../../../src/assets/img/bg-showcase-3.jpg');"></div>
       <div class="col-lg-6 order-lg-1 my-auto showcase-text p-5">
         <h2>Desventajas</h2>
-        <p class="lead mb-0 text-justify text-black">
-
-        </p>
+        <ul class="lead mb-0 text-justify text-black" *ngFor="let disadvantage of methodology.disadvantages">
+          <li>{{ disadvantage }}</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -95,5 +95,11 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="container mr-5 mb-5" *ngIf="methodology.sources != null">
+    <h3 class="text-center">Fuentes: </h3>
+    <ul class="lead mb-0 text-justify text-muted" *ngFor="let source of methodology.sources">
+      <li>{{ source }}</li>
+    </ul>
   </div>
 </section>
