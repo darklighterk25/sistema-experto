@@ -24,7 +24,7 @@ import { MethodologiesService } from './services/methodologies.service';
     MethodologyComponent,
     FooterComponent,
     NavbarComponent,
-    SurveyComponent
+    SurveyComponent,
   ],
   imports: [
     BrowserModule,

@@ -104,4 +104,12 @@ export class MethodologiesService {
       ]
     };
   }
+  getScores() {
+    const METHODOLOGIES: any[] = [];
+    const SCORE = 0;
+    this.methodologies.forEach( function ( value ) {
+      METHODOLOGIES.push( { name: value.name, score: SCORE } );
+    });
+    return METHODOLOGIES;
+  }
 }
