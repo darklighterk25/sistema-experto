@@ -16,10 +16,9 @@
           <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Metodologías</a>
           
           <div class="dropdown-menu" aria-labelledby="dropdown04">
-            
-            <a class="dropdown-item" href="#methodology/devops">Devops</a>
-            <a class="dropdown-item" href="#methodology/scrum">Scrum</a>
-            <a class="dropdown-item" href="#methodology/scrumban">Scrumban</a>
+            <span *ngFor="let link of links">
+              <a class="dropdown-item" [routerLink]="['methodology',link.id]">{{ link.name }}</a>
+            </span>
           </div>
         </li>
       </ul>

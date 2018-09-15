@@ -40,14 +40,19 @@ export class MethodologiesService {
       Openup.DATA
     ];
   }
+  getLinks(): any {
+    const LINKS: any[] = [];
+    this.methodologies.forEach( ( value ) => {
+      LINKS.push( { name: value.name, id: value.id } );
+    });
+    return LINKS;
+  }
   getMethodologies(): Methodology[] {
     return this.methodologies;
   }
   getMethodology( id: string ): Methodology {
     for (let i = 0; i < this.methodologies.length; i++) {
-      console.log('le llegó ' + id);
       if (this.methodologies[i].id === id) {
-        console.log('y lo encontró!');
         return this.methodologies[i];
       }
     }
