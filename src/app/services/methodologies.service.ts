@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Methodology } from '../interfaces/methodology';
 
-// Metodologías
 import { AdaptiveSoftwareDevelopment } from '../classes/adaptive-software-development';
 import { AgileModeling } from '../classes/agile-modeling';
 import { CrystalClearMethods } from '../classes/crystal-clear-methods';
@@ -9,7 +8,13 @@ import { DynamicSystemsDevelopmentMethod } from '../classes/dynamic-systems-deve
 import { ExtremeProgramming } from '../classes/extreme-programming';
 import { FeatureDrivenDevelopment } from '../classes/feature-driven-development';
 import { Kanban } from '../classes/kanban';
-
+import { Scrum } from '../classes/scrum';
+import { ScrumBan } from '../classes/scrumban';
+import { Devops } from '../classes/Devops';
+import { LeanSoftDev } from '../classes/lean-software-development';
+import { AUP } from '../classes/agile-unified-process';
+import { DAD } from '../classes/Disciplined-agile-delivery';
+import { Openup } from '../classes/openup';
 @Injectable({
   providedIn: 'root'
 })
@@ -25,7 +30,14 @@ export class MethodologiesService {
       DynamicSystemsDevelopmentMethod.DATA,
       ExtremeProgramming.DATA,
       FeatureDrivenDevelopment.DATA,
-      Kanban.DATA
+      Kanban.DATA,
+      Scrum.DATA,
+      ScrumBan.DATA,
+      Devops.DATA,
+      LeanSoftDev.DATA,
+      AUP.DATA,
+      DAD.DATA,
+      Openup.DATA
     ];
   }
   getMethodologies(): Methodology[] {
