@@ -31,12 +31,24 @@ export class Kanban {
       'tiempo de espera y el tiempo dedicado a la asignación de tareas. Usted selecciona sus tareas, por tanto no tendrá que esperar a ' +
       'que la tarea vaya hacia usted.'
     ],
-    disadvantages: null,
+    disadvantages: [
+      'Menor efectividad en situaciones de Recursos Compartidos: Las órdenes no frecuentes vuelven ineficientes a kanban ya que se ' +
+      'tiene que asegurar una producción suficiente por parte de un proceso mientras que a su vez el proceso que es no-frecuente es ' +
+      'ejecutado.',
+      'Kanban asume sistemas de producción repetitivos dada la naturaleza de su creación en el área de manufactura.',
+      'Posiblemente Kanban pueda arrojar productos de baja calidad que requieren de ser retrabajados. Kanban funciona a manera de ' +
+      'semáforo para administrar el tráfico y así cumplir con las necesidades del cliente indicando cuando empezar, cuando bajar el ' +
+      'ritmo y cuando parar. Cualquier variabilidad o evento no esperado puede afectar el funcionamiento del sistema provocando que se ' +
+      'generen señales confusas.',
+      'Calidad: El sistema Kanban lleva los niveles de inventario cerca de 0 lo que en caso de alta incertidumbre e interrupciones en ' +
+      'la red de transporte representa un peligro ya que eso significa que los clientes se quedan sin suministro de partes.'
+    ],
     whoItWorks: 'Kanban, representada por una tarjeta Kanban, se moverá a través de las diversas etapas de su trabajo hasta su ' +
       'finalización. A menudo se habla de él como un método de extracción, de forma que usted tira de sus tareas a través de su flujo ' +
       'de trabajo, ya que permite a los usuarios mover de sitio libremente las tareas en un entorno de trabajo basado en el equipo.',
     graph: './src/assets/img/kanban.png',
-    recommendedProjects: null,
+    recommendedProjects: 'Proyectos a pequeña escala de equipos pequeños que requieren cumplir con los requerimientos funcionales lo ' +
+      'más pronto posible.',
     sources: [
       'https://kanbantool.com/es/metodologia-kanban'
     ]

@@ -31,14 +31,24 @@ export class AgileModeling {
       'La comunicación integra los procesos de desarrollo, consigue la cohesión entre el personal y los clientes y garantiza la ' +
       'coherencia del resultado del proyecto con los objetivos que se van planteando de manera dinámica.'
     ],
-    disadvantages: null,
+    disadvantages: [
+      'Precisamente como consecuencia de su flexibilidad, Ágil muestra una estructura muy débil. Existe poca exactitud en la ' +
+      'planificación del proyecto, desde los plazos de entrega hasta los presupuestos. Como no existe un plan concreto, todo parece ' +
+      'flotar en el vacío.',
+      'Además, como también se dijo antes, la comunicación, la implicación personal y la colaboración se necesitan para garantizar el ' +
+      'éxito de un proceso Ágil. Esto puede ser problemático, especialmente si trabajamos con equipos poco colaboradores.',
+      'La necesidad de una estrecha y permanente comunicación, puede consumir mucho tiempo en reuniones e intercambios de contenidos.',
+      'Por su parte, además, las metodologías ágiles son mucho más dependientes de la presencia de las mismas personas desde el ' +
+      'principio hasta el final del proyecto. El abandono de alguno de los integrantes del equipo se acusará mucho más que en la ' +
+      'metodología Predictiva.'
+    ],
     whoItWorks: 'El Modelado Ágil es una metodología basada en la práctica para modelado efectivo de sistemas de software. La ' +
       'metodología AM es una colección de prácticas, guiadas por principios y valores que pueden ser aplicados por profesionales de ' +
       'software en el día a día. AM no es un proceso prescriptivo, ni define procedimientos detallados de como crear un tipo de modelo ' +
       'dado. En lugar de eso, sugiere prácticas para ser un modelador efectivo. Es "suave al tacto", no es duro y es rápido -- piense ' +
       'en AM como un arte, no una ciencia.',
-    graph: './src/assets/img/am.png',
-    recommendedProjects: null,
+    graph: 'assets/img/am.png',
+    recommendedProjects: 'Proyectos nuevos de tamaño mediano, que requieren ir siendo mejorados progresivamente.',
     sources: [
       'http://agilemodeling.com/shared/AMPamphletSpanish.pdf',
       'http://www.itmplatform.com/es/blog/ventajas-e-inconvenientes-de-metodologias-agil-y-predictiva/'

@@ -16,11 +16,15 @@ export class CrystalClearMethods {
       'Fácil acceso a usuarios expertos. Tener alguna comunicación con expertos desarrolladores.'
     ],
     advantages: [
-      'Primer ventaja',
-      'Segunda ventaja',
-      'Tercer ventaja'
+      'Es apropiada para entornos ligeros.',
+      'Al estar diseñada para el cambio experimenta reducción de costo.',
+      'Presenta una planificación más transparente para los clientes.',
+      'Se definen en cada iteración cuales son los objetivos de la siguiente.',
+      'Permite tener una muy útil realimentación de los usuarios.'
     ],
-    disadvantages: null,
+    disadvantages: [
+      'Delimita el alcance del proyecto con el cliente.'
+    ],
     whoItWorks: 'Crystal es una metodología de desarrollo de Software ágil, que en realidad está considerada como una “familia de ' +
       'metodologías” debido a que se subdivide en varios tipos de metodologías en función a la cantidad de personas que vayan a ' +
       'conformar el proyecto. Creada por Alistair Cockburn.\n' +
@@ -46,10 +50,11 @@ export class CrystalClearMethods {
       '* Comunicación entre los componentes\n' +
       '* Distintas políticas a seguir\n' +
       '* Espacio físico de trabajo',
-    graph: './src/assets/img/ccm.png',
-    recommendedProjects: 'Proyectos pequeños',
+    graph: 'assets/img/ccm.png',
+    recommendedProjects: 'Proyectos pequeños que requieren una extensa comunicación con el cliente.',
     sources: [
-      'https://folderit.net/itech/desarrollo-agil-de-software-crystal-clear/'
+      'https://folderit.net/itech/desarrollo-agil-de-software-crystal-clear/',
+      'https://vencees.wordpress.com/ventajas-y-desventajas/'
     ]
   };
 }

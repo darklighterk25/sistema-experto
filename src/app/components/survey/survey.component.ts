@@ -11,5 +11,17 @@ export class SurveyComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  question1( option: number ) {
+    switch ( option ) {
+      case 0: {
+        break;
+      }
+      case 1: {
+        break;
+      }
+      case 2: {
+        break;
+      }
+    }
+  }
 }

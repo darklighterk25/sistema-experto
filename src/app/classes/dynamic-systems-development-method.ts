@@ -21,7 +21,11 @@ export class DynamicSystemsDevelopmentMethod {
       'Permite realizar cambios de forma fácil.',
       'Permite la reutilización de aplicación a través de los módulos existentes.'
     ],
-    disadvantages: null,
+    disadvantages: [
+      'Se necesita una alta participación de los usuarios en el desarrollo, para evitar que los desarrolladores asuman ' +
+      'criterios que no son ciertos.',
+      'No es una metodología de desarrollo común. El proceso es un tanto difícil de comprender.'
+    ],
     whoItWorks: 'El marco DSDM consta de tres fases sucesivas, a saber, el pre-proyecto, el ciclo de vida del proyecto y las fases ' +
       'posteriores a los proyectos. La fase del proyecto de DSDM es el más elaborado de las tres fases. La fase del proyecto del ciclo ' +
       'de vida consiste en 5 etapas que forman un método iterativo, paso a paso en el desarrollo de un SI. Las tres fases y etapas ' +
@@ -44,7 +48,7 @@ export class DynamicSystemsDevelopmentMethod {
       'continuo basado en el carácter iterativo e incremental de DSDM. En lugar de terminar el proyecto en un ciclo por lo general el ' +
       'proyecto puede volver a las fases o etapas previas para que el paso anterior y los productos a entregar se puedan refinar.',
     graph: './src/assets/img/dsdm.png',
-    recommendedProjects: 'Proyectos grandes.',
+    recommendedProjects: 'Proyectos grandes. Limitados por tiempo y recursos con requerimientos cambiantes.',
     sources: [
       'https://sites.google.com/site/utmfci/home/funcionamiento'
     ]

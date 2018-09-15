@@ -32,7 +32,12 @@ export class ExtremeProgramming {
       'El código es sencillo y entendible.',
       'Poca documentación a elaborar para el desarrollo del sistema.'
     ],
-    disadvantages: null,
+    disadvantages: [
+      'Es recomendable emplearla solo en proyectos a corto plazo.',
+      'En caso de fallar, las comisiones son muy altas.',
+      'Requiere de un rígido ajuste a los principios de XP.',
+      'Puede no siempre ser más fácil que el desarrollo tradiciona'
+    ],
     whoItWorks: 'La programación extrema, o Extreme Programming (XP), es una metodología de desarrollo ágil, una de las más exitosas ' +
       'en tiempo reciente. Su autor principal es Kent Beck, quien eligió algunas características de otras metodologías y las relacionó ' +
       'de forma que cada una complementara a la otra.\n' +
@@ -72,7 +77,8 @@ export class ExtremeProgramming {
       '11. Estándar de codificación\n' +
       '12. La semana de 40 horas',
     graph: './src/assets/img/xp.png',
-    recommendedProjects: null,
+    recommendedProjects: 'Proyectos pequeños que requieren de una comunicación constante con el cliente, así como ser adaptables ante ' +
+      'cambios imprevistos.',
     sources: [
       'Beck, K. A. (2004). Extreme Programming Explained. Addison Wesley.',
       'Martin, R., & Newkirk, J. (2002). La programación extrema en la práctica. Pearson Addison-Wesley.'

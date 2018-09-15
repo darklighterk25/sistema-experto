@@ -27,7 +27,15 @@ export class FeatureDrivenDevelopment {
       'Mejora continua de los procesos y el equipo de desarrollo.',
       ' Evita malentendidos de requerimientos entre el cliente y el equipo.'
     ],
-    disadvantages: null,
+    disadvantages: [
+      'Falta de documentación del diseño. El código no puede tomarse como una documentación. En sistemas de tamaño grande se necesitar ' +
+      'leer los cientos o miles de páginas del listado de código fuente.',
+      'Problemas derivados de la comunicación oral. Este tipo de comunicación resulta difícil de preservar cuando pasa el tiempo y está ' +
+      'sujeta a muchas ambigüedades.',
+      'Fuerte dependencia de las personas. Como se evita en lo posible la documentación y los diseños convencionales, los proyectos ' +
+      'ágiles dependen críticamente de las personas.',
+      'Falta de reusabilidad. La falta de documentación hacen difícil que pueda reutilizarse el código ágil.'
+    ],
     whoItWorks: 'Es una metodología ágil diseñada para el desarrollo de software, basada en la calidad y el monitoreo constante del ' +
       'proyecto. Fue desarrollada por Jeff De Luca y Peter Coad a mediados de los años 90. Esta metodología se enfoca en iteraciones ' +
       'cortas, que permiten entregas tangibles del producto en un periodo corto de tiempo, de como máximo dos semanas.\n' +
