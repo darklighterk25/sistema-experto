@@ -15,6 +15,14 @@ import { LeanSoftDev } from '../classes/lean-software-development';
 import { AUP } from '../classes/agile-unified-process';
 import { DAD } from '../classes/Disciplined-agile-delivery';
 import { Openup } from '../classes/openup';
+import { DisenoPorPlanificacion } from '../classes/diseño-por-planificacion';
+import { ModeloVDelMinisterioAlemanDeLaDefensa } from '../classes/modelo-V-del-ministerio-aleman-de-la-defensa';
+import { ModeloIterativo } from '../classes/modelo-iterativo';
+import { Prototipado } from '../classes/prototipado';
+import { PrototipadoEvolutivo } from '../classes/prototipado-evolutivo';
+import { Espiral } from '../classes/espiral';
+import { EntregaEvolutiva } from '../classes/entrega-evolutiva';
+import { ModeloDeCascadaConPrototipado } from '../classes/modelo-de-cascada-con-prototipado';
 @Injectable({
   providedIn: 'root'
 })
@@ -37,7 +45,15 @@ export class MethodologiesService {
       LeanSoftDev.DATA,
       AUP.DATA,
       DAD.DATA,
-      Openup.DATA
+      Openup.DATA,
+      DisenoPorPlanificacion.DATA,
+      ModeloVDelMinisterioAlemanDeLaDefensa.DATA,
+      ModeloIterativo.DATA,
+      Prototipado.DATA,
+      PrototipadoEvolutivo.DATA,
+      Espiral.DATA,
+      EntregaEvolutiva.DATA,
+      ModeloDeCascadaConPrototipado.DATA
     ];
   }
   getLinks(): any {
