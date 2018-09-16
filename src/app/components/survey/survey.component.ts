@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-survey',
-  templateUrl: './survey.component.html',
-  styleUrls: ['./survey.component.css']
+  templateUrl: './survey.component.html'
 })
 export class SurveyComponent implements OnInit {
 

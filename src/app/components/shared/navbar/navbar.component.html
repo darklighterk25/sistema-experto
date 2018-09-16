@@ -1,18 +1,19 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"><i class="fab fa-stack-overflow"></i></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#"><i class="fas fa-home"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+            aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse text-right" id="navbarsExample04">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#home">Inicio <span class="sr-only">(current)</span></a>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['home']">Inicio <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#survey">Encuesta</a>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['survey']">Encuesta</a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown" routerLinkActive="active">
           <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Metodologías</a>
           
           <div class="dropdown-menu" aria-labelledby="dropdown04">
@@ -24,3 +25,4 @@
       </ul>
     </div>
   </nav>
+<i class=""></i>

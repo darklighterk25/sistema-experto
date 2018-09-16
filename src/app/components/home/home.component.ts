@@ -3,8 +3,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
-  styles:[ './home.component.css']
+  templateUrl: './home.component.html'
 })
 export class HomeComponent implements OnInit {
 

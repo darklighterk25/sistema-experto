@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 // Componentes
 import { AppComponent } from './app.component';
+import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { MethodologyComponent } from './components/methodology/methodology.component';
@@ -17,6 +18,7 @@ import { MethodologiesService } from './services/methodologies.service';
 
 @NgModule({
   declarations: [
+    AboutComponent,
     AppComponent,
     HomeComponent,
     MethodologyComponent,
