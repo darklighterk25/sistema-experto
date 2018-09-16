@@ -2,8 +2,8 @@ import { Methodology } from '../interfaces/methodology';
 
 export class LeanSoftDev {
   public static DATA: Methodology = {
-    id: 'lsd',
-    name: 'lsd',
+    id: 'Lean Software Development',
+    name: 'Lean Software Development',
     characteristics: [
         'Eliminar desperdicios ',
         'Amplificar el aprendizaje ',
@@ -20,27 +20,18 @@ export class LeanSoftDev {
         'El empoderamiento del equipo de desarrollo'
         
     ],
-    disadvantages: null,
-    whoItWorks: 'No existe un único proceso de Lean Software Development.'+
-    'Se puede decir que un proceso es Lean si se corresponden claramente con los valores'+
-    ' y los principios de Lean Software Development. Lean Software Development no recomienda'+
-    ' ningún procedimiento, pero algunas actividades se han convertido en habituales.'+
-    ' Las organizaciones que trabajan con Lean tratan de fomentar el kaizen a través de'+
-    ' la visualización del flujo de trabajo y de los trabajos en curso y a través de una'+
-    ' comprensión de la dinámica de flujo y de factores (como cuellos de botella,'+
-    ' disponibilidad no inmediata y desechos) que le afectan. Las mejoras en el'+
-    ' proceso se sugieren y se justifican como una forma de reducir las fuentes'+
-    ' de variabilidad, eliminar desechos, mejorar los flujos o mejorar la entrega'+
-    ' de valor o la administración de riesgos. Como tal, los procesos de Lean Software'+
-    ' Development evolucionarán siempre y estarán individualizados de forma única para'+
-    ' la organización dentro en la que se desarrollan. No se puede copiar una definición'+
-    ' de proceso desde una organización a otra y pretender que funcione en un contexto diferente.'+
-    ' También es improbable que si se regresa a una organización después de unas semanas o meses,'+
-    ' el proceso en uso sea igual al anteriormente observado. Evolucionará siempre.',
+    disadvantages: [
+      'El proyecto depende en gran medida la cohesión del equipo y los compromisos individuales de los miembros del equipo. ',
+      'El éxito del proyecto depende de la disciplina de los miembros del equipo son y cómo son excepcionales sus habilidades técnicas.',
+      'Los patrocinadores del proyecto y los clientes necesitan saber lo que quieren y tomar las decisiones pertinentes. ',
+      'El papel de un analista de negocios es de vital importancia para garantizar la documentación de los requerimientos del negocio (BRD) se entiende correctamente. Si usted no tiene una persona con las habilidades correctas analista de negocios, entonces rápidamente podría encontrar esta convertido en una de las causas de la corrupción del alcance.',
+      'En magra que permite la especificación de requisitos software (SRS) para evolucionar. Sin embargo, esto causa problemas de su propia. La flexibilidad es grande, pero demasiado pronto dará lugar a un desarrollo que pierde de vista su objetivo original y que nunca termina.'
+    ],
+    whoItWorks: 'La metodología de desarrollo de software lean (traducción aproximada de lean: «fino» o «esbelto») es una traducción de los principios y las prácticas de la forma de producir lean, hacia el área del desarrollo de software. Inicialmente, originado en el Sistema de Producción de Toyota y ahora, apoyado por una corriente que está surgiendo desde la comunidad Ágil. Este método ofrece todo un marco teórico sólido y basado en la experiencia, para las prácticas ágiles de gestión.',
     recommendedProjects: null,
-    graph: './src/assets/img/lsd.png',
+    graph: './src/assets/img/lsd.gif',
     sources: [
-      'https://kanbantool.com/es/metodologia-kanban'
+      'http://www.scrummanager.net/bok/index.php/Lean_Software_Development'
     ]
   };
 }

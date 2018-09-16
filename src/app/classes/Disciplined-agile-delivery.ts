@@ -2,8 +2,8 @@ import { Methodology } from '../interfaces/methodology';
 
 export class DAD {
   public static DATA: Methodology = {
-    id: 'dad',
-    name: 'dad',
+    id: 'Disciplined Agile Delivery',
+    name: 'Disciplined Agile Delivery',
     characteristics: [
       'Personas primero: Las personas y como se relacionan son el primer determinante de éxito de la solución del proyecto.',
       'Orientado a aprender: Promueve la idea que los compañeros de equipo deben trabajar juntos y aprender del otro',
@@ -18,18 +18,17 @@ export class DAD {
       'Elimina las conjeturas de la extensión de los métodos ágiles y, por lo tanto, le permite centrarse en su trabajo real, que es proporcionar valor a sus grupos de interés.',
       'Deja en claro los riesgos que está asumiendo y le permite aumentar la probabilidad de éxito.'
     ],
-    disadvantages: null,
-    whoItWorks: 'El enfoque de DAD está en la entrega, aunque también se abordan'+
+    disadvantages: [
+      'Es una nueva metodología, por lo tanto no es muy conocida como las demás.',
+      'DAD es una metodología compleja, orientada a clarificar los problemas en la entrega de la solución, lo que puede confundir a personas que busquen una metodología sencilla.'
+    ],
+    whoItWorks: 'Es un framework de decisiones de proceso que permite decisiones simplificadas de proceso alrededor de una solución entrega incremental e iterativa. DAD utiliza muchas practicas del desarrollo ágil de software incluyendo scrum, modelado ágil, lean software development. El enfoque de DAD está en la entrega, aunque también se abordan'+
     ' cómo otros aspectos del ciclo de vida del sistema afectan el ciclo de vida de la entrega.'+
     ' El ciclo de vida completo del sistema / producto va desde la idea inicial del producto,'+
     ' hasta la entrega, las operaciones y el soporte, y muchas veces tiene muchas iteraciones'+
-    ' del ciclo de vida de la entrega. El siguiente diagrama muestra una vista de alto nivel del'+
-    ' ciclo de vida del sistema, que indica las tres fases que son el foco de DAD,'+
-    ' así como las fases que son el foco de DevOps Disciplinado.'+
-    ' La porción DAD es el ciclo de vida de tres fases (hasta) en el que se genera incrementalmente '+
-     'una solución de consumo a lo largo del tiempo.',
+    ' del ciclo de vida de la entrega. ',
     graph: './src/assets/img/dad.png',
-    recommendedProjects: null,
+    recommendedProjects: 'Proyectos de entregas rapidas. Proyectos con equipos pequeños',
     sources: [
       'http://www.disciplinedagiledelivery.com/introduction-to-dad/'
     ]

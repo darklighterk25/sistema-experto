@@ -2,8 +2,8 @@ import { Methodology } from '../interfaces/methodology';
 
 export class Devops {
   public static DATA: Methodology = {
-    id: 'devops',
-    name: 'devops',
+    id: 'Devops',
+    name: 'Devops',
     characteristics: [
       'Desarrolladores, probadores y especialistas en operaciones trabajan en colaboración mediante las herramientas compartidas de DevOps.',
       'Corrige desalineaciones de personas y objetivos creando vínculos más cercanos entre desarrolladores y operaciones.',
@@ -17,16 +17,12 @@ export class Devops {
       'Mejores tiempos de recuperación y menor numero de errores por cambios',
       'Menos tiempo resolviendo aspectos de seguridad'
     ],
-    disadvantages: null,
-    whoItWorks: '1. Desarrollo:En esta etapa DevOps, el desarrollo del software se lleva a cabo constantemente. En esta fase, todo el proceso de desarrollo se divide en pequeños ciclos de desarrollo. Esto beneficia al equipo DevOps para acelerar el desarrollo de software y el proceso de entrega.\n'+
-    '2. Prueba: El equipo de QA usa herramientas como Selenium para identificar y corregir errores en la nueva pieza de código.\n'+
-    '3. Integración: En esta etapa, la nueva funcionalidad se integra con el código vigente y las pruebas se llevan a cabo. El desarrollo continuo solo es posible debido a la integración y pruebas continuas.\n'+
-    '4. Despliegue: En esta fase, el proceso de implementación se lleva a cabo de manera continua. Se realiza de tal manera que cualquier cambio realizado en cualquier momento en el código, no debe afectar el funcionamiento del sitio web de alto tráfico.\n'+
-    '5. Monitoreo: En esta fase, el equipo de operación se encargará del comportamiento inadecuado del sistema o errores que se encuentran en la producción.',
+    disadvantages: ['Necesaria comunicacion con el cliente','Necesario personal capacitado con la metodología'],
+    whoItWorks: 'DevOps es un conjunto de prácticas que automatizan los procesos entre los equipos de desarrollo de software y TI para que puedan compilar, probar y publicar software con mayor rapidez y fiabilidad. El concepto de DevOps se basa en establecer una cultura de colaboración entre equipos que, tradicionalmente, trabajaban en grupos aislados. Entre las ventajas que promete, se incluyen el aumento de la confianza y de la velocidad de publicación de software, la capacidad de solucionar incidencias críticas rápidamente y una mejor gestión del trabajo imprevisto.',
     graph: './src/assets/img/devops.png',
-    recommendedProjects: null,
+    recommendedProjects: 'Proyectos pequeños con entrega continua y con comunicacion con el cliente',
     sources: [
-      'https://kanbantool.com/es/metodologia-kanban'
+      'https://es.atlassian.com/devops'
     ]
   };
 }

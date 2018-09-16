@@ -2,8 +2,8 @@ import { Methodology } from '../interfaces/methodology';
 
 export class AUP {
   public static DATA: Methodology = {
-    id: 'aup',
-    name: 'aup',
+    id: 'Agile Unified Process',
+    name: 'Agile Unified Process',
     characteristics: [
       'El personal sabe lo que está haciendo. La gente no va a leer detallado el proceso de documentación, pero algunos quieren una orientación de alto nivel y / o formación de vez en cuando. La AUP producto proporciona enlaces a muchos de los detalles, si usted está interesado, pero no obliga a aquellos que no lo deseen.',
       'Simplicidad. Todo se describe concisamente utilizando un puñado de páginas, no miles de ellos.',
@@ -18,12 +18,11 @@ export class AUP {
       'Es un proceso simplificado de RUP',
       'Se centra en actividades de alto valor, estrictamente necesarias para el desarrollo'
     ],
-    disadvantages: null,
-    whoItWorks: 'Al igual que en RUP, en AUP se establecen cuatro fases que transcurren de manera consecutiva y que acaban con hitos claros alcanzados:\n'+
-    'Inception(Concepción): El objetivo de esta fase es obtener una comprensión común clienteequipo de desarrollo del alcance del nuevo sistema y definir una o varias arquitecturas candidatas para el mismo.\n'+
-    'Elaboración: El objetivo es que el equipo de desarrollo profundice en la comprensión de los requisitos del sistema y en validar la arquitectura.\n'+
-    'Construcción: Durante la fase de construcción el sistema es desarrollado y probado al completo en el ambiente de desarrollo.\n'+
-    'Transición: el sistema se lleva a los entornos de preproducción donde se somete a pruebas de validación y aceptación y finalmente se despliega en los sistemas de producción.',
+    disadvantages: [
+      'El AUP es un producto muy pesado en relación al RUP.',
+      'Como es un proceso simplificado, muchos desarrolladores eligen trabajar con    el RUP, por tener a disposición mas detalles  en el proceso.'
+    ],
+    whoItWorks: 'El Proceso Unificado Ágil de Scott Ambler o Agile Unified Process (AUP) en inglés es una versión simplificada del Proceso Unificado de Rational (RUP). Este describe de una manera simple y fácil de entender la forma de desarrollar aplicaciones de software de negocio usando técnicas ágiles y conceptos que aún se mantienen válidos en RUP. El AUP aplica técnicas ágiles incluyendo Desarrollo Dirigido por Pruebas (test driven development - TDD), Modelado Ágil, Gestión de Cambios Ágil, y Refactorización de Base de Datos para mejorar la productividad.',
     graph: './src/assets/img/devops.png',
     recommendedProjects: null,
     sources: [
