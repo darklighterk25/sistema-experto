@@ -14,10 +14,23 @@
           <a class="nav-link" [routerLink]="['survey']">Encuesta</a>
         </li>
         <li class="nav-item dropdown" routerLinkActive="active">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Metodologías</a>
-          
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false">
+            Metodologías Tradicionales
+          </a>
           <div class="dropdown-menu" aria-labelledby="dropdown04">
-            <span *ngFor="let link of links">
+            <span *ngFor="let link of links.traditionals">
+              <a class="dropdown-item" [routerLink]="['methodology',link.id]">{{ link.name }}</a>
+            </span>
+          </div>
+        </li>
+        <li class="nav-item dropdown" routerLinkActive="active">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false">
+            Metodologías Ágiles
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdown04">
+            <span *ngFor="let link of links.agile">
               <a class="dropdown-item" [routerLink]="['methodology',link.id]">{{ link.name }}</a>
             </span>
           </div>

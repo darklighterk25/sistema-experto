@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MethodologiesService } from '../../../services/methodologies.service';
+import {Link} from '../../../interfaces/link';
 
 @Component({
   selector: 'app-navbar',
@@ -7,11 +8,10 @@ import { MethodologiesService } from '../../../services/methodologies.service';
 })
 export class NavbarComponent implements OnInit {
 
-  links: any[];
+  links: any;
 
   constructor( private _methodologiesService: MethodologiesService ) {
     this.links = _methodologiesService.getLinks();
-    console.log(this.links);
   }
 
   ngOnInit() {

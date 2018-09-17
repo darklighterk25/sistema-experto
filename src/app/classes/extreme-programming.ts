@@ -4,6 +4,7 @@ export class ExtremeProgramming {
   public static DATA: Methodology = {
     id: 'extreme-programming',
     name: 'Extreme Programming',
+    isAgile: true,
     characteristics: [
       'Desarrollo iterativo e incremental: pequeñas mejoras, unas tras otras.',
       'Pruebas unitarias continuas, frecuentemente repetidas y automatizadas, incluyendo pruebas de regresión. Se aconseja escribir el ' +

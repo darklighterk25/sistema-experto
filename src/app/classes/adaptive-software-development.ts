@@ -4,6 +4,7 @@ export class AdaptiveSoftwareDevelopment {
   public static DATA: Methodology = {
     id: 'adaptive-software-development',
     name: 'Adaptive Software Development',
+    isAgile: true,
     characteristics: [
       'Iterativo.',
       'Orientado a los componentes de software más que a las tareas en las que se va a alcanzar dicho objetivo.',

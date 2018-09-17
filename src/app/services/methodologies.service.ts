@@ -1,6 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Methodology } from '../interfaces/methodology';
 
+// Interfaces
+import { Methodology } from '../interfaces/methodology';
+import { Link } from '../interfaces/link';
+
+// Metodologías
 import { AdaptiveSoftwareDevelopment } from '../classes/adaptive-software-development';
 import { AgileModeling } from '../classes/agile-modeling';
 import { CrystalClearMethods } from '../classes/crystal-clear-methods';
@@ -10,19 +14,20 @@ import { FeatureDrivenDevelopment } from '../classes/feature-driven-development'
 import { Kanban } from '../classes/kanban';
 import { Scrum } from '../classes/scrum';
 import { ScrumBan } from '../classes/scrumban';
-import { Devops } from '../classes/Devops';
+import { Devops } from '../classes/devops';
 import { LeanSoftDev } from '../classes/lean-software-development';
 import { AUP } from '../classes/agile-unified-process';
-import { DAD } from '../classes/Disciplined-agile-delivery';
+import { DAD } from '../classes/disciplined-agile-delivery';
 import { Openup } from '../classes/openup';
 import { DisenoPorPlanificacion } from '../classes/diseño-por-planificacion';
-import { ModeloVDelMinisterioAlemanDeLaDefensa } from '../classes/modelo-V-del-ministerio-aleman-de-la-defensa';
+import { ModeloVDelMinisterioAlemanDeLaDefensa } from '../classes/modelo-v-del-ministerio-aleman-de-la-defensa';
 import { ModeloIterativo } from '../classes/modelo-iterativo';
 import { Prototipado } from '../classes/prototipado';
 import { PrototipadoEvolutivo } from '../classes/prototipado-evolutivo';
 import { Espiral } from '../classes/espiral';
 import { EntregaEvolutiva } from '../classes/entrega-evolutiva';
 import { ModeloDeCascadaConPrototipado } from '../classes/modelo-de-cascada-con-prototipado';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -57,11 +62,16 @@ export class MethodologiesService {
     ];
   }
   getLinks(): any {
-    const LINKS: any[] = [];
-    this.methodologies.forEach( ( value ) => {
-      LINKS.push( { name: value.name, id: value.id } );
+    const TRADITIONALS: Link[] = [];
+    const AGILE: Link[] = [];
+    this.methodologies.forEach( ( methodology ) => {
+      if (methodology.isAgile) {
+        AGILE.push( { name: methodology.name, id: methodology.id } );
+      } else {
+        TRADITIONALS.push( { name: methodology.name, id: methodology.id } );
+      }
     });
-    return LINKS;
+    return { traditionals: TRADITIONALS, agile: AGILE };
   }
   getMethodologies(): Methodology[] {
     return this.methodologies;

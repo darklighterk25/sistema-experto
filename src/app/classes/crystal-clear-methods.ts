@@ -4,6 +4,7 @@ export class CrystalClearMethods {
   public static DATA: Methodology = {
     id: 'crystal-clear-methods',
     name: 'Crystal Clear Methods',
+    isAgile: true,
     characteristics: [
       'Entrega frecuente. Consiste en entregar software a los clientes con frecuencia, no solamente compilar el código. La frecuencia ' +
       'dependerá del proyecto, pero puede ser diaria, semanal o  mensual.',

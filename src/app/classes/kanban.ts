@@ -4,6 +4,7 @@ export class Kanban {
   public static DATA: Methodology = {
     id: 'kanban',
     name: 'Kanban',
+    isAgile: true,
     characteristics: [
       'Visualice lo que hace (su flujo de trabajo): una visualización de todas sus tareas y elementos en una tabla contribuirá a que ' +
       'todos los miembros de su equipo se mantengan al corriente con su trabajo.',

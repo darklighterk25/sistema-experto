@@ -4,6 +4,7 @@ export class FeatureDrivenDevelopment {
   public static DATA: Methodology = {
     id: 'feature-driven-development',
     name: 'Feature Driven Development',
+    isAgile: true,
     characteristics: [
       'Se preocupa por la calidad, por lo que incluye un monitoreo constante del proyecto.',
       'Ayuda a contrarrestar situaciones como el exceso en el presupuesto, fallas en el programa o el hecho de entregar menos de lo ' +

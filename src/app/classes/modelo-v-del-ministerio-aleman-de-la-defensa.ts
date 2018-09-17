@@ -2,8 +2,8 @@ import { Methodology } from '../interfaces/methodology';
 
 export class ModeloVDelMinisterioAlemanDeLaDefensa {
   public static DATA: Methodology = {
-    id: 'modelo-V-del-ministerio-aleman-de-la-defensa',
-    name: 'Modelo V del ministerio alemán de la defensa',
+    id: 'modelo-v-del-ministerio-aleman-de-la-defensa',
+    name: 'Modelo V del Ministerio Alemán de la Defensa',
     characteristics: [
       'Presenta equipos pequeños, de una a cinco personas.',
       'Todas las fases deben de encontrarse respaldadas por medio del uso de un documento y pruebas.',

@@ -4,6 +4,7 @@ export class AgileModeling {
   public static DATA: Methodology = {
     id: 'agile-modeling',
     name: 'Agile Modeling',
+    isAgile: true,
     characteristics: [
       'Asumir simplicidad.',
       'Bienvenido el cambio.',

@@ -4,6 +4,7 @@ export class DynamicSystemsDevelopmentMethod {
   public static DATA: Methodology = {
     id: 'dynamic-systems-development-method',
     name: 'Dynamic Systems Development Method',
+    isAgile: true,
     characteristics: [
       'Busca involucrar al cliente es la clave para llevar un proyecto eficiente y efectivo.',
       'El equipo del proyecto debe tener el poder para tomar decisiones que son importantes.',

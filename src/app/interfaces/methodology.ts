@@ -1,6 +1,7 @@
 export interface Methodology {
   id: string;
   name: string;
+  isAgile?: boolean;
   characteristics: string[];
   advantages: string[];
   disadvantages: string[];
