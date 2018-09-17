@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MethodologiesService } from '../../services/methodologies.service';
+import { CharacteristicsService } from '../../services/characteristics.service';
+import { Characteristic } from '../../interfaces/characteristic';
 
 @Component({
   selector: 'app-survey',
@@ -7,39 +9,23 @@ import { MethodologiesService } from '../../services/methodologies.service';
 })
 export class SurveyComponent implements OnInit {
 
-  scores: any[];
-  isChecked: any = false;
-  checkValue(event: any){
-    this.isChecked = !this.isChecked;
-    console.log(event);
-  }
-  selected(){
-    console.log("seleccionado");
-  }
+  methodologies: any[];
+  characteristics: Characteristic[];
 
-  unselected(){
-    console.log("desseleccionado");
-  }
-  constructor( private _methodologiesService: MethodologiesService ) {
-    // Recibe todos los nombres de las metodologias registradas con un valor de puntaje.
-    this.scores = _methodologiesService.getScores();
-    console.log(this.scores);
-  }
+  constructor( private _methodologiesService: MethodologiesService,
+               private _characteristicsService: CharacteristicsService ) {
+    this.methodologies = _methodologiesService.getScores();
+    this.characteristics = _characteristicsService.getCharacteristics();
+   }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
-  question1( option: number ) {
-    switch ( option ) {
-      case 0: {
-        break;
-      }
-      case 1: {
-        break;
-      }
-      case 2: {
-        break;
-      }
+  checkValue ( index: any ) {
+    if ( !this.characteristics[index].checked ) {
+      this.methodologies[index].score += 1;
+    } else {
+      this.methodologies[index].score -= 1;
     }
+    this.characteristics[index].checked = !this.characteristics[index].checked;
   }
 }

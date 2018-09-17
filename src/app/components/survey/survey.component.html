@@ -1,25 +1,20 @@
 <div style="display: flex; justify-content: space-around;">
-  <div>
-    <ul>
-      <li>sdad</li>
-      <li>asdas</li>
-      <li>sadas</li>
-      <li>sada</li>
-      <li>sadsad</li>
-    </ul>
-  </div>
-  <div>
-    <ul>
-      <li>sdad</li>
-      <li>asdas</li>
-      <li>sadas</li>
-      <li>sada</li>
-      <li>sadsad</li>
-    </ul>
-  </div>
-</div>
-<input type="checkbox" (ngModel)="isChecked" (change)="checkValue(isChecked?'A':'B')" />
-<div class="col-3">
-  <!-- Tarjetas -->
-
+    <div>
+        <ul>
+            <li *ngFor="let characteristic of characteristics; let i = index">
+                {{characteristic.description}}
+                <input type="checkbox" [checked]="characteristics[i].checked" (change)="checkValue(i)" />
+            </li>
+        </ul>
+    </div>
+    <div>
+        <div *ngFor="let methodology of methodologies">
+            <div class="card bg-light mb-3" style="max-width: 18rem;" *ngIf="methodology.score > 0">
+                <div class="card-body">
+                    <h5 class="card-title">{{methodology.name}}</h5>
+                    <p class="card-text">{{methodology.score}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
