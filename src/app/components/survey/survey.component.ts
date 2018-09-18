@@ -16,13 +16,14 @@ export class SurveyComponent implements OnInit {
 
   constructor( private _methodologiesService: MethodologiesService,
                private _characteristicsService: CharacteristicsService ) {
-    this.methodologies = _methodologiesService.getScores();
-    this.characteristics = _characteristicsService.getCharacteristics();
+    this.methodologies = this._methodologiesService.getScores();
+    this.characteristics = this._characteristicsService.getCharacteristics();
     this.maxscore = 0;
     this.minscore = 0;
-   }
+  }
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
 
   checkValue ( index: any ) {
     if ( !this.characteristics[index].checked ) {

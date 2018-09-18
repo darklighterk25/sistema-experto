@@ -1,39 +1,45 @@
-<div style="display: flex; justify-content: space-around;">
-    <div>
-        <ul>
-            <li *ngFor="let characteristic of characteristics; let i = index">
-                {{characteristic.description}}
-                <input type="checkbox" [checked]="characteristics[i].checked" (change)="checkValue(i)" />
-            </li>
-        </ul>
-    </div>
-    <div>
-        <div *ngFor="let methodology of methodologies">
-            <div *ngIf="(methodology.score > minscore && methodology.score <= maxscore)">
-                <div [ngSwitch]="methodology.score">
-                    <div class="card text-white bg-success mb-3" *ngSwitchCase="maxscore" style="max-width: 18rem;">
-                        <h5 class="card-header">{{methodology.name}}</h5>
-                        <div class="card-body">
-                            <p class="card-text">{{methodology.summary}}</p>
-                            <a href="#" class="btn btn-light">Ver más...</a>
-                        </div>
-                    </div>
-                    <div class="card text-white bg-warning mb-3" *ngSwitchCase="maxscore-1" style="max-width: 18rem;">
-                        <h5 class="card-header">{{methodology.name}}</h5>
-                        <div class="card-body">
-                            <p class="card-text">{{methodology.summary}}</p>
-                            <a href="#" class="btn btn-light">Ver más...</a>
-                        </div>
-                    </div>
-                    <div class="card text-white bg-danger mb-3" *ngSwitchCase="maxscore-2" style="max-width: 18rem;">
-                        <h5 class="card-header">{{methodology.name}}</h5>
-                        <div class="card-body">
-                            <p class="card-text">{{methodology.summary}}</p>
-                            <a href="#" class="btn btn-light">Ver más...</a>
-                        </div>
-                    </div>
-                </div>
+<h2 class="mt-5 ml-5">Instrucciones</h2>
+<div class="ml-5 mr-5 text-muted">
+  Selecciona las características que consideres apropiadas para el desarrollo de tu proyecto.
+  Del lado derecho de la pantalla irán apareciendo las metodologías que cumplen con dichas características,
+  mostrándose con colores diferentes dependiendo el nivel de aproximación.
+</div>
+<div class="row jumbotron mt-5 ml-5 mr-5">
+  <div class="col-6">
+    <ul>
+      <div *ngFor="let characteristic of characteristics; let i = index">
+        <input type="checkbox" [checked]="characteristics[i].checked" (change)="checkValue(i)" />
+        {{characteristic.description}}
+      </div>
+    </ul>
+  </div>
+  <div class="col-6">
+    <div *ngFor="let methodology of methodologies">
+      <div *ngIf="(methodology.score > minscore && methodology.score <= maxscore)">
+        <div [ngSwitch]="methodology.score">
+          <div class="card text-white bg-success mb-3" *ngSwitchCase="maxscore">
+            <h5 class="card-header">{{methodology.name}}</h5>
+            <div class="card-body">
+              <p class="card-text">{{methodology.summary}}</p>
+              <a [routerLink]="['/methodology',methodology.id]" class="btn btn-light">Ver más...</a>
             </div>
+          </div>
+          <div class="card text-black bg-warning mb-3" *ngSwitchCase="maxscore-1">
+            <h5 class="card-header">{{methodology.name}}</h5>
+            <div class="card-body">
+              <p class="card-text">{{methodology.summary}}</p>
+              <a [routerLink]="['/methodology',methodology.id]" class="btn btn-light">Ver más...</a>
+            </div>
+          </div>
+          <div class="card text-white bg-danger mb-3" *ngSwitchCase="maxscore-2">
+            <h5 class="card-header">{{methodology.name}}</h5>
+            <div class="card-body">
+              <p class="card-text">{{methodology.summary}}</p>
+              <a [routerLink]="['/methodology',methodology.id]" class="btn btn-light">Ver más...</a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>

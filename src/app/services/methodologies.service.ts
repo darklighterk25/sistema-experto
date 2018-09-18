@@ -125,7 +125,12 @@ export class MethodologiesService {
     const METHODOLOGIES: any[] = [];
     const SCORE = 0;
     this.methodologies.forEach( function ( value ) {
-      METHODOLOGIES.push( { name: value.name, score: SCORE, summary: '' + value.whoItWorks.substr(0, 150) + '...' } );
+      METHODOLOGIES.push({
+        name: value.name,
+        score: SCORE,
+        summary: '' + value.whoItWorks.substr(0, 150) + '...',
+        id: value.id
+      });
     });
     return METHODOLOGIES;
   }
