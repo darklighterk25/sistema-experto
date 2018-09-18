@@ -36,7 +36,7 @@ export class LeanSoftDev {
       'en el Sistema de Producción de Toyota y ahora, apoyado por una corriente que está surgiendo desde la comunidad Ágil. Este método ' +
       'ofrece todo un marco teórico sólido y basado en la experiencia, para las prácticas ágiles de gestión.',
     recommendedProjects: null,
-    graph: './src/assets/img/lsd.gif',
+    graph: 'src/assets/img/lsd.gif',
     sources: [
       'http://www.scrummanager.net/bok/index.php/Lean_Software_Development'
     ]

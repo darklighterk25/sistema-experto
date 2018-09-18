@@ -30,7 +30,7 @@ export class Openup {
       'manifiesta por completo el proceso de construir un sistema. Para atender las necesidades que no están cubiertas en su contenido ' +
       'OpenUp es extensible a ser utilizado como base sobre la cual se pueden añadir o adaptarse a contenido de otro proceso que sea ' +
       'necesario.',
-    graph: './src/assets/img/openup.jpg',
+    graph: 'assets/img/openup.jpg',
     recommendedProjects: 'Proyectos con equipos pequeños.\n Proyectos de bajos recursos.',
     sources: [
       'https://www.eclipse.org/epf/general/OpenUP.pdf'

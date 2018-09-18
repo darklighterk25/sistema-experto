@@ -25,7 +25,7 @@ export class ScrumBan {
       'presentan diferencias en la manera de ejecutar el proyecto. Es por eso que el novedoso plan Scrumban se encarga de combinar ' +
       'aquellos elementos que resultan complementarios. Por ejemplo, una de las combinaciones más usadas en el plano empresarial, es la ' +
       'de gestionar las tareas previstas con el método Scrum y planificar los errores con el método Kanban.',
-    graph: './src/assets/img/scrumban.png',
+    graph: 'assets/img/scrumban.png',
     recommendedProjects: 'Proyectos de mantenimiento: aquellos en los que resulta indispensable la presentación de resultados de forma ' +
       'parcial para seguir avanzando.' +
       '\nProyectos en los que los requisitos varíen con frecuencia: aquellos en los que el cliente no tiene fijadas las condiciones y ' +

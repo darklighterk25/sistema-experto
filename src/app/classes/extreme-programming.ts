@@ -77,7 +77,7 @@ export class ExtremeProgramming {
       '10. Propiedad colectiva del código\n' +
       '11. Estándar de codificación\n' +
       '12. La semana de 40 horas',
-    graph: './src/assets/img/xp.png',
+    graph: 'assets/img/xp.png',
     recommendedProjects: 'Proyectos pequeños que requieren de una comunicación constante con el cliente, así como ser adaptables ante ' +
       'cambios imprevistos.',
     sources: [

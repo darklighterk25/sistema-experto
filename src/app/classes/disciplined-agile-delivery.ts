@@ -35,7 +35,7 @@ export class DAD {
       'lean software development. El enfoque de DAD está en la entrega, aunque también se abordan cómo otros aspectos del ciclo de vida ' +
       'del sistema afectan el ciclo de vida de la entrega. El ciclo de vida completo del sistema / producto va desde la idea inicial del ' +
       'producto, hasta la entrega, las operaciones y el soporte, y muchas veces tiene muchas iteraciones del ciclo de vida de la entrega. ',
-    graph: './src/assets/img/dad.jpg',
+    graph: 'assets/img/dad.jpg',
     recommendedProjects: 'Proyectos de entregas rapidas. Proyectos con equipos pequeños',
     sources: [
       'http://www.disciplinedagiledelivery.com/introduction-to-dad/'

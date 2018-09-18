@@ -30,7 +30,7 @@ export class Devops {
       'cultura de colaboración entre equipos que, tradicionalmente, trabajaban en grupos aislados. Entre las ventajas que promete, se ' +
       'incluyen el aumento de la confianza y de la velocidad de publicación de software, la capacidad de solucionar incidencias críticas ' +
       'rápidamente y una mejor gestión del trabajo imprevisto.',
-    graph: './src/assets/img/devops.png',
+    graph: 'assets/img/devops.png',
     recommendedProjects: 'Proyectos pequeños con entrega continua y con comunicacion con el cliente',
     sources: [
       'https://es.atlassian.com/devops'

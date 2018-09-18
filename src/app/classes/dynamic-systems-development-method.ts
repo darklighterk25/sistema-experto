@@ -48,7 +48,7 @@ export class DynamicSystemsDevelopmentMethod {
       'mantenimiento, mejoras y correcciones de acuerdo a los principios de DSDM. El mantenimiento puede ser visto como desarrollo ' +
       'continuo basado en el carácter iterativo e incremental de DSDM. En lugar de terminar el proyecto en un ciclo por lo general el ' +
       'proyecto puede volver a las fases o etapas previas para que el paso anterior y los productos a entregar se puedan refinar.',
-    graph: './src/assets/img/dsdm.png',
+    graph: 'assets/img/dsdm.png',
     recommendedProjects: 'Proyectos grandes. Limitados por tiempo y recursos con requerimientos cambiantes.',
     sources: [
       'https://sites.google.com/site/utmfci/home/funcionamiento'

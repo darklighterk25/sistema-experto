@@ -35,7 +35,7 @@ export class AUP {
       'de software de negocio usando técnicas ágiles y conceptos que aún se mantienen válidos en RUP. El AUP aplica técnicas ágiles ' +
       'incluyendo Desarrollo Dirigido por Pruebas (test driven development - TDD), Modelado Ágil, Gestión de Cambios Ágil, y ' +
       'Refactorización de Base de Datos para mejorar la productividad.',
-    graph: './src/assets/img/aup.jpg',
+    graph: 'assets/img/aup.jpg',
     recommendedProjects: null,
     sources: [
       'http://www.ambysoft.com/unifiedprocess/agileUP.html'

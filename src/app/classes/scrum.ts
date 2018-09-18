@@ -42,7 +42,7 @@ export class Scrum {
       'selección tiene origen en un estudio de la manera de trabajar de equipos altamente productivos.'+
       'En Scrum se realizan entregas parciales y regulares del producto final, priorizadas por el beneficio que aportan al receptor del ' +
       'proyecto. ',
-    graph: './src/assets/img/scrum.jpg',
+    graph: 'assets/img/scrum.jpg',
     recommendedProjects: 'Scrum está especialmente indicado para proyectos en entornos complejos, donde se necesita obtener resultados ' +
       'pronto, donde los requisitos son cambiantes o poco definidos, donde la innovación, la competitividad, la flexibilidad y la ' +
       'productividad son fundamentales.',

@@ -57,7 +57,7 @@ export class FeatureDrivenDevelopment {
       '\n' +
       'Y para concluir, se procede a la construcción total del proyecto.'
     ,
-    graph: './src/assets/img/fdd.png',
+    graph: 'assets/img/fdd.png',
     recommendedProjects: 'Proyectos pequeños con requisitos cambiantes.',
     sources: [
       'http://metodologiafdd.blogspot.com/'

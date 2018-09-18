@@ -3,7 +3,7 @@ import { Methodology } from '../interfaces/methodology';
 export class SoftwareComercialExistente {
     public static DATA: Methodology = {
         id: 'software-comercial-existente',
-        name: 'Software comercial ecistente',
+        name: 'Software Comercial Existente',
         characteristics: [
           'Pueden ser adquiridos de manera sencilla, que presentan buena calidad pero tienen un costo muy elevado,',
           'Se manejan por licencia de propietario y tienen restricciones de uso que se definen cuando se adquiere la licencia.'

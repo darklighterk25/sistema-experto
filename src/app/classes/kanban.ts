@@ -47,7 +47,7 @@ export class Kanban {
     whoItWorks: 'Kanban, representada por una tarjeta Kanban, se moverá a través de las diversas etapas de su trabajo hasta su ' +
       'finalización. A menudo se habla de él como un método de extracción, de forma que usted tira de sus tareas a través de su flujo ' +
       'de trabajo, ya que permite a los usuarios mover de sitio libremente las tareas en un entorno de trabajo basado en el equipo.',
-    graph: './src/assets/img/kanban.png',
+    graph: 'assets/img/kanban.png',
     recommendedProjects: 'Proyectos a pequeña escala de equipos pequeños que requieren cumplir con los requerimientos funcionales lo ' +
       'más pronto posible.',
     sources: [
