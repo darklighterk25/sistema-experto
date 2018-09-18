@@ -9,10 +9,29 @@
     </div>
     <div>
         <div *ngFor="let methodology of methodologies">
-            <div class="card bg-light mb-3" style="max-width: 18rem;" *ngIf="methodology.score > 0">
-                <div class="card-body">
-                    <h5 class="card-title">{{methodology.name}}</h5>
-                    <p class="card-text">{{methodology.score}}</p>
+            <div *ngIf="(methodology.score > minscore && methodology.score <= maxscore)">
+                <div [ngSwitch]="methodology.score">
+                    <div class="card text-white bg-success mb-3" *ngSwitchCase="maxscore" style="max-width: 18rem;">
+                        <h5 class="card-header">{{methodology.name}}</h5>
+                        <div class="card-body">
+                            <p class="card-text">{{methodology.summary}}</p>
+                            <a href="#" class="btn btn-light">Ver más...</a>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-warning mb-3" *ngSwitchCase="maxscore-1" style="max-width: 18rem;">
+                        <h5 class="card-header">{{methodology.name}}</h5>
+                        <div class="card-body">
+                            <p class="card-text">{{methodology.summary}}</p>
+                            <a href="#" class="btn btn-light">Ver más...</a>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-danger mb-3" *ngSwitchCase="maxscore-2" style="max-width: 18rem;">
+                        <h5 class="card-header">{{methodology.name}}</h5>
+                        <div class="card-body">
+                            <p class="card-text">{{methodology.summary}}</p>
+                            <a href="#" class="btn btn-light">Ver más...</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

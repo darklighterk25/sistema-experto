@@ -27,6 +27,15 @@ import { PrototipadoEvolutivo } from '../classes/prototipado-evolutivo';
 import { Espiral } from '../classes/espiral';
 import { EntregaEvolutiva } from '../classes/entrega-evolutiva';
 import { ModeloDeCascadaConPrototipado } from '../classes/modelo-de-cascada-con-prototipado';
+import { CodeAndFix } from '../classes/code-and-fix';
+import { StructuredDevelopment } from '../classes/structured-development';
+import { WaterfallModel } from '../classes/waterfall-model';
+import { SashimiModel } from '../classes/sashimi-model';
+import { WaterfallWithSubprojects } from '../classes/waterfall-with-subprojects';
+import { IncrementalModel } from '../classes/incremental-model';
+import { IncrementalWaterfall} from '../classes/incremental-waterfall';
+import { StageDeliveryModel } from '../classes/stage-delivery-model';
+import { Direct } from 'protractor/built/driverProviders';
 
 @Injectable({
   providedIn: 'root'
@@ -37,28 +46,36 @@ export class MethodologiesService {
 
   constructor() {
     this.methodologies = [
-      AdaptiveSoftwareDevelopment.DATA,
-      AgileModeling.DATA,
-      CrystalClearMethods.DATA,
-      DynamicSystemsDevelopmentMethod.DATA,
-      ExtremeProgramming.DATA,
-      FeatureDrivenDevelopment.DATA,
-      Kanban.DATA,
-      Scrum.DATA,
-      ScrumBan.DATA,
-      Devops.DATA,
-      LeanSoftDev.DATA,
-      AUP.DATA,
-      DAD.DATA,
-      Openup.DATA,
+      CodeAndFix.DATA,
+      StructuredDevelopment.DATA,
+      WaterfallModel.DATA,
+      SashimiModel.DATA,
+      WaterfallWithSubprojects.DATA,
+      IncrementalModel.DATA,
+      IncrementalWaterfall.DATA,
+      StageDeliveryModel.DATA,
       DisenoPorPlanificacion.DATA,
       ModeloVDelMinisterioAlemanDeLaDefensa.DATA,
       ModeloIterativo.DATA,
       Prototipado.DATA,
       PrototipadoEvolutivo.DATA,
-      Espiral.DATA,
+      ModeloDeCascadaConPrototipado.DATA,
       EntregaEvolutiva.DATA,
-      ModeloDeCascadaConPrototipado.DATA
+      Espiral.DATA, //Despues de esta madre van las clases de calvin :v
+      ExtremeProgramming.DATA,
+      AdaptiveSoftwareDevelopment.DATA,
+      DynamicSystemsDevelopmentMethod.DATA,
+      CrystalClearMethods.DATA,
+      FeatureDrivenDevelopment.DATA,
+      AgileModeling.DATA,
+      Kanban.DATA,
+      Scrum.DATA,
+      ScrumBan.DATA,
+      LeanSoftDev.DATA,
+      Devops.DATA,
+      AUP.DATA,
+      DAD.DATA,
+      Openup.DATA
     ];
   }
   getLinks(): any {
@@ -108,7 +125,7 @@ export class MethodologiesService {
     const METHODOLOGIES: any[] = [];
     const SCORE = 0;
     this.methodologies.forEach( function ( value ) {
-      METHODOLOGIES.push( { name: value.name, score: SCORE } );
+      METHODOLOGIES.push( { name: value.name, score: SCORE, summary: '' + value.whoItWorks.substr(0, 150) + '...' } );
     });
     return METHODOLOGIES;
   }
