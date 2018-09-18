@@ -24,11 +24,10 @@ export class StructuredDevelopment {
         whoItWorks: 'Concibe el análisis y diseño del sistema en base a la construcción de modelos, ' +
         'con el fin de representar las funciones que realiza el sistema, desde su concepción física ' +
         'hasta la deducción lógica de su información y procesos.',
-        graph: 'assets/img/am.png',
+        graph: 'assets/img/structdev.png',
         recommendedProjects: 'Proyectos de tamaño medio que no requieran de una documentación bien estructurada.',
         sources: [
-          'http://agilemodeling.com/shared/AMPamphletSpanish.pdf',
-          'http://www.itmplatform.com/es/blog/ventajas-e-inconvenientes-de-metodologias-agil-y-predictiva/'
+          ''
         ]
       };
 }

@@ -26,11 +26,10 @@ export class IncrementalModel {
         'modelo libera el producto parcialmente al usuario en un principio y lentamente agrega ' +
         'funcionalidad incrementada al sistema liberando los requerimientos por partes. Al desarrollo ' +
         'de cada requerimiento se le aplican los pasos del modelo tradicional de cascada.',
-        graph: 'assets/img/am.png',
+        graph: 'assets/img/incmodel.png',
         recommendedProjects: 'Proyectos no tan grandes en donde se quiere que el cliente vea avances rápidos.',
         sources: [
-          'http://agilemodeling.com/shared/AMPamphletSpanish.pdf',
-          'http://www.itmplatform.com/es/blog/ventajas-e-inconvenientes-de-metodologias-agil-y-predictiva/'
+          ''
         ]
       };
 }

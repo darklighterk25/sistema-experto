@@ -24,13 +24,10 @@ export class IncrementalWaterfall {
         'sistema, no como en el modelo de cascada normal en el que el proceso solamente ' +
         'se hace una vez para todo el sistema, aquí se efectúan todas las etapas para cada ' +
         'incremento de la funcionalidad del sistema.',
-        graph: 'assets/img/ads.png',
+        graph: 'assets/img/waterfall.gif',
         recommendedProjects: 'Proyectos medianos-grandes que no requieren mucha documentación.',
         sources: [
-          'https://es.wikiversity.org/wiki/Desarrollo_Adaptativo_de_Software',
-          'https://issuu.com/cyber107/docs/metodologiaagilasd-100613135636-php',
-          'http://grupo4virginio.blogspot.com/2014/10/desarrollo-adaptativo-del-software-das.html',
-          'http://ingenieriadesoftware.mex.tl/61154_ASD.html'
+          ''
         ]
       };
 }

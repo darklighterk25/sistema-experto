@@ -27,11 +27,10 @@ export class WaterfallModel {
         'viejos modelos y es extensamente usado en proyectos de gobierno y en muchas compañias ' +
         'mayores. Este modelo enfatiza la planeación en las etapas tempranas y detecta defectos en el ' +
         'diseño antes de que se desarrollen.',
-        graph: 'assets/img/am.png',
+        graph: 'assets/img/waterfall.gif',
         recommendedProjects: 'Funciona bien para proyectos complejos que se entienden correctamente.',
         sources: [
-          'http://agilemodeling.com/shared/AMPamphletSpanish.pdf',
-          'http://www.itmplatform.com/es/blog/ventajas-e-inconvenientes-de-metodologias-agil-y-predictiva/'
+          ''
         ]
       };
 }

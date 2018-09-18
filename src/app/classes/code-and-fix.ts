@@ -26,11 +26,10 @@ export class CodeAndFix {
         'puede ser correción de errores o agregar funcionalidad adicional. Al usar este modelo, el código pronto se vuelve ' +
         'irreparable y no modificable. No hay espacio en este modelo para que el análisis, el diseño o el aspecto del proceso ' +
         'de desarrollo se lleven a cabo de forma estructurada o aislada.',
-        graph: 'assets/img/am.png',
+        graph: 'assets/img/codenfix.png',
         recommendedProjects: 'Proyectos muy pequeños que tengan un ciclo de vida corto.',
         sources: [
-          'http://agilemodeling.com/shared/AMPamphletSpanish.pdf',
-          'http://www.itmplatform.com/es/blog/ventajas-e-inconvenientes-de-metodologias-agil-y-predictiva/'
+          ''
         ]
       };
 }

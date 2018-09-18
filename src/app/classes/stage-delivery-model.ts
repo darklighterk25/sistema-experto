@@ -26,11 +26,10 @@ export class StageDeliveryModel {
         'que se muestra al cliente el software en diferentes estados sucesivos de desarrollo, se ' +
         'diferencica en que las especificaciones no son conocidas en detalle al inicio del proyecto y por ' +
         'tanto se van desarrollando simultáneamente con las diferentes versiones del código.',
-        graph: 'assets/img/am.png',
+        graph: 'assets/img/stagedelivery.png',
         recommendedProjects: 'Proyectos en los que el problema principal se puede descomponer en problemas más pequeños.',
         sources: [
-          'http://agilemodeling.com/shared/AMPamphletSpanish.pdf',
-          'http://www.itmplatform.com/es/blog/ventajas-e-inconvenientes-de-metodologias-agil-y-predictiva/'
+          ''
         ]
       };
 }

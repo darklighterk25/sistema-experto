@@ -25,11 +25,10 @@ export class SashimiModel {
         whoItWorks: 'Este modelo fue originado por Peter DeGrace. En ocasiones se le hace referencia ' +
         'como "modelo en cascada con fases solapadas". Ya que las fases en el modelo sashimi se ' +
         'superponen, la información de puntos problemáticos puede ser atendida durante otras fases del modelo de cascada.',
-        graph: 'assets/img/am.png',
+        graph: 'assets/img/sashimi.png',
         recommendedProjects: 'Proyectos con equipos débiles y productos maduros.',
         sources: [
-          'http://agilemodeling.com/shared/AMPamphletSpanish.pdf',
-          'http://www.itmplatform.com/es/blog/ventajas-e-inconvenientes-de-metodologias-agil-y-predictiva/'
+          ''
         ]
       };
 }
