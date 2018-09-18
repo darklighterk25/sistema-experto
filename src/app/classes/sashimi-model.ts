@@ -27,8 +27,6 @@ export class SashimiModel {
         'superponen, la información de puntos problemáticos puede ser atendida durante otras fases del modelo de cascada.',
         graph: 'assets/img/sashimi.png',
         recommendedProjects: 'Proyectos con equipos débiles y productos maduros.',
-        sources: [
-          ''
-        ]
+        sources: null
       };
 }

@@ -28,8 +28,6 @@ export class IncrementalModel {
         'de cada requerimiento se le aplican los pasos del modelo tradicional de cascada.',
         graph: 'assets/img/incmodel.png',
         recommendedProjects: 'Proyectos no tan grandes en donde se quiere que el cliente vea avances rápidos.',
-        sources: [
-          ''
-        ]
+        sources: null
       };
 }

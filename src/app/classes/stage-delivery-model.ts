@@ -28,8 +28,6 @@ export class StageDeliveryModel {
         'tanto se van desarrollando simultáneamente con las diferentes versiones del código.',
         graph: 'assets/img/stagedelivery.png',
         recommendedProjects: 'Proyectos en los que el problema principal se puede descomponer en problemas más pequeños.',
-        sources: [
-          ''
-        ]
+        sources: null
       };
 }

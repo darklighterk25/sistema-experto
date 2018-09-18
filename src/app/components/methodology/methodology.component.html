@@ -12,11 +12,10 @@
   </div>
 </div>
 
-<!-- Icons Grid -->
 <section class="features-icons bg-light text-center pb-5">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6  pt-4">
+      <div class="col-lg-6  pt-4" *ngIf="methodology.whoItWorks != null">
         <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
           <div class="features-icons-icon d-flex">
             <i class="fas fa-book-reader m-auto text-primary" style="font-size: 80px;"></i>
@@ -25,7 +24,7 @@
           <p class="lead mb-0 pb-4 pt-1 text-justify">{{ methodology.whoItWorks }}</p>
         </div>
       </div>
-      <div class="col-lg-6 pt-4">
+      <div class="col-lg-6 pt-4"  *ngIf="methodology.recommendedProjects != null">
         <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
           <div class="features-icons-icon d-flex">
             <i class="fas fa-certificate m-auto text-primary" style="font-size: 80px;"></i>
@@ -49,8 +48,7 @@
   </div>
 </section>
 
-<!-- Image Showcases -->
-<section class="showcase text-black bg-white">
+<section class="showcase text-black bg-white" *ngIf="methodology.characteristics != null">
   <div class="container-fluid p-0">
     <div class="row no-gutters">
       <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('../../../../src/assets/img/bg-showcase-1.jpg');"></div>
@@ -61,7 +59,7 @@
         </ul>
       </div>
     </div>
-    <div class="row no-gutters">
+    <div class="row no-gutters" *ngIf="methodology.advantages != null">
       <div class="col-lg-6 text-white showcase-img" style="background-image: url('../../../../src/assets/img/bg-showcase-2.jpg');"></div>
       <div class="col-lg-6 order-lg-1 my-auto showcase-text p-5">
         <h2>Ventajas</h2>
@@ -70,7 +68,7 @@
         </ul>
       </div>
     </div>
-    <div class="row no-gutters">
+    <div class="row no-gutters"  *ngIf="methodology.disadvantages != null">
       <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('../../../../src/assets/img/bg-showcase-3.jpg');"></div>
       <div class="col-lg-6 order-lg-1 my-auto showcase-text p-5">
         <h2>Desventajas</h2>
@@ -82,7 +80,6 @@
   </div>
 </section>
 
-<!-- Call to Action -->
 <section class="features-icons bg-light text-center">
   <div class="container">
     <div class="row">
@@ -97,7 +94,7 @@
     </div>
   </div>
   <div class="container mr-5 mb-5" *ngIf="methodology.sources != null">
-    <h3 class="text-center">Fuentes: </h3>
+    <h3 class="text-left">Fuentes: </h3>
     <ul class="lead mb-0 text-justify text-muted" *ngFor="let source of methodology.sources">
       <li>{{ source }}</li>
     </ul>

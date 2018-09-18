@@ -19,7 +19,8 @@ export class CodeAndFix {
         disadvantages: [
           'No ofrece medios de evaluación del progreso.',
           'No sirve para proyectos grandes',
-          'Si se usa con frecuencia puede ocasionar desviaciones, dando como resultado una esetructura de dódigo y mantenibilidad inevitablemente deteriorados.'
+          'Si se usa con frecuencia puede ocasionar desviaciones, dando como resultado una esetructura de dódigo y mantenibilidad ' +
+          'inevitablemente deteriorados.'
         ],
         whoItWorks: 'Esta es una metodología ad hoc y no bien definida. Es un modelo simple de dos fases. ' +
         'La primera fase es escribir el código. La siguiente fase es reparar dicho código. Reparar el código en este contexto ' +
@@ -28,8 +29,6 @@ export class CodeAndFix {
         'de desarrollo se lleven a cabo de forma estructurada o aislada.',
         graph: 'assets/img/codenfix.png',
         recommendedProjects: 'Proyectos muy pequeños que tengan un ciclo de vida corto.',
-        sources: [
-          ''
-        ]
+        sources: null
       };
 }

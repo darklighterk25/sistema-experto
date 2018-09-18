@@ -33,7 +33,6 @@ export class ModeloDeCascadaConPrototipado {
       ' requerimientos iniciales como en el modelo de cascada, por lo que gracias al prototipado se pueden ir definiendo esos' +
       'aspectos. Además no es recomendable para sistemas que son largos y complejos, los cuales requieren una mejor organización ' +
       'y arquitectura',
-    sources: [
-    ]
+    sources: null
   };
 }

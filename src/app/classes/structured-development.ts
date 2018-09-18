@@ -26,8 +26,6 @@ export class StructuredDevelopment {
         'hasta la deducción lógica de su información y procesos.',
         graph: 'assets/img/structdev.png',
         recommendedProjects: 'Proyectos de tamaño medio que no requieran de una documentación bien estructurada.',
-        sources: [
-          ''
-        ]
+        sources: null
       };
 }

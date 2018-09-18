@@ -14,7 +14,8 @@ export class WaterfallWithSubprojects {
         advantages: [
           'Permite detectar errores en las primeras etapas con un costo bajo.',
           'Ayuda a minimizar los gastos de planificación.',
-          'No se demora la implementación de las áreas que son fáciles de diseñar solo porque se está esperando el diseño de un área difícil.',
+          'No se demora la implementación de las áreas que son fáciles de diseñar solo porque se está esperando el diseño de un área ' +
+          'difícil.',
           'El proceso es más ágil, por lo que es más rápido en cuanto a tiempo de desarrollo.'
         ],
         disadvantages: [
@@ -26,9 +27,8 @@ export class WaterfallWithSubprojects {
         whoItWorks: 'Es una variación sobre el ciclo de vida en cascada del software, denominada cascada ' +
         'con subproyectos porque permite la ejecución de algunas de las tareas de la cascada en paralelo.',
         graph: 'assets/img/watsubproyects.jpg',
-        recommendedProjects: 'Funciona bien para proyectos complejos que se entienden correctamente y que se quiere que su tiempo de desarrollo sea menor.',
-        sources: [
-          ''
-        ]
+        recommendedProjects: 'Funciona bien para proyectos complejos que se entienden correctamente y que se quiere que su tiempo de ' +
+          'desarrollo sea menor.',
+        sources: null
       };
 }

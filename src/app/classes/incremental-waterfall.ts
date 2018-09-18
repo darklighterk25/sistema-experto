@@ -26,8 +26,6 @@ export class IncrementalWaterfall {
         'incremento de la funcionalidad del sistema.',
         graph: 'assets/img/waterfall.gif',
         recommendedProjects: 'Proyectos medianos-grandes que no requieren mucha documentación.',
-        sources: [
-          ''
-        ]
+        sources: null
       };
 }

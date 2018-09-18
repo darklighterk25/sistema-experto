@@ -29,8 +29,6 @@ export class WaterfallModel {
         'diseño antes de que se desarrollen.',
         graph: 'assets/img/waterfall.gif',
         recommendedProjects: 'Funciona bien para proyectos complejos que se entienden correctamente.',
-        sources: [
-          ''
-        ]
+        sources: null
       };
 }

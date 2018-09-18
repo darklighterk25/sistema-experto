@@ -35,7 +35,14 @@ import { WaterfallWithSubprojects } from '../classes/waterfall-with-subprojects'
 import { IncrementalModel } from '../classes/incremental-model';
 import { IncrementalWaterfall} from '../classes/incremental-waterfall';
 import { StageDeliveryModel } from '../classes/stage-delivery-model';
-import { Direct } from 'protractor/built/driverProviders';
+import { EspiralConReduccionDeRiesgos } from '../classes/espiral-con-reduccion-de-riesgos';
+import { RapidApplicationDevelopment } from '../classes/rapid-application-development';
+import { DisenoDeHerramientas } from '../classes/diseno-de-herramientas';
+import { SoftwareComercialExistente } from '../classes/software-comercial-existente';
+import { DesarrolloBasadoEnComponentes } from '../classes/desarrollo-basado-en-componentes';
+import { ModeloDeEspecificacionOperationalDeZave } from '../classes/modelo-de-especificacion-operational-de-zave';
+import { AnalisisYDiseñoOrientadoAObjetos } from '../classes/analisis-y-diseño-orientado-a-objetos';
+import { ProcesoUnificadoDeDesarrolloDeSoftware } from '../classes/proceso-unificado-de-desarrollo-de-software';
 
 @Injectable({
   providedIn: 'root'
@@ -61,7 +68,15 @@ export class MethodologiesService {
       PrototipadoEvolutivo.DATA,
       ModeloDeCascadaConPrototipado.DATA,
       EntregaEvolutiva.DATA,
-      Espiral.DATA, //Despues de esta madre van las clases de calvin :v
+      Espiral.DATA,
+      EspiralConReduccionDeRiesgos.DATA,
+      RapidApplicationDevelopment.DATA,
+      DisenoDeHerramientas.DATA,
+      SoftwareComercialExistente.DATA,
+      DesarrolloBasadoEnComponentes.DATA,
+      ModeloDeEspecificacionOperationalDeZave.DATA,
+      AnalisisYDiseñoOrientadoAObjetos.DATA,
+      ProcesoUnificadoDeDesarrolloDeSoftware.DATA,
       ExtremeProgramming.DATA,
       AdaptiveSoftwareDevelopment.DATA,
       DynamicSystemsDevelopmentMethod.DATA,
